@@ -10,5 +10,6 @@ describe('check', () => {
     checkStatus(request, response)
 
     expect(response.sendStatus.calledOnce).to.be.true
+    expect(response.sendStatus.calledWith(200)).to.be.true
   })
 })
