@@ -7,7 +7,8 @@
     "migrate": "node scripts/migrate.js",
     "prestart": "node scripts/create-database.js && npm run migrate",
     "start": "nodemon -r dotenv/config index.js",
-    "test:unit": "mocha tests/unit/**/*.js"
+    "test:unit": "mocha tests/unit/**/*.js",
+    "test": "npm test:unit"
   },
   "keywords": [],
   "author": "",
